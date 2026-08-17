@@ -14,9 +14,11 @@ If you've ever had your agent forget something you told it last week, or state a
 
 You don't need to code to use it. You do need to be comfortable installing a skill the normal way for your platform (see [Install](#install) below).
 
-## Why
+## The problem
 
-Most agent memory is one flat pile of facts, all trusted equally. That breaks in two ways, and both get worse the longer you use it:
+In Claude Code and Codex, there's no memory at all by default — a session ends and takes everything with it. The client's preferences, the campaign you're mid-way through, the thing you already decided: gone the moment you close the window, until you type it all again. Cowork and ChatGPT Work do carry memory forward on their own, but that just moves you to the next problem, not past it.
+
+Once you add memory, a second problem shows up, and this is the one most memory tools miss: a flat pile of facts, all trusted equally, breaks in two ways, and both get worse the longer you use it.
 
 - **The same fact ends up in three places.** A decision lands in a project file, a chat summary, and the agent's own memory. One copy changes. Now there are three versions of the truth and no rule for which one is current — so the agent picks whichever one it sees first.
 - **A guess hardens into a rule.** The agent notices something once, writes it down as confidently as something it actually checked, and every future session treats it as fact. Nobody double-checks it, because it already reads as settled — so the mistake can steer your work for weeks before anyone catches it.
