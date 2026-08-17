@@ -1,5 +1,5 @@
 ---
-name: session-log
+name: agent-session-memory
 description: >
   Saves a structured memory of the current session so context carries forward to the next one.
   Use whenever the user says "session log", "wrap up", "end of session", "save my session",

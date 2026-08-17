@@ -6,7 +6,7 @@ Takes about ten minutes across two sessions. Do it once after installing.
 
 ## Before you start
 
-- [ ] Skill directory is in place (`.claude/skills/session-log/` or `.agents/skills/session-log/`)
+- [ ] Skill directory is in place (`.claude/skills/agent-session-memory/` or `.agents/skills/agent-session-memory/`)
 - [ ] `SKILL.md` is at the top of that directory
 - [ ] You have run `onboarding.md` and have at least one context
 

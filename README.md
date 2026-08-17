@@ -45,7 +45,7 @@ Every session writes to up to three plain text files, each with one job:
 These live at the root of the project you're working in — **not** inside the skill folder:
 
 ```
-<skills-root>/session-log/        ← the skill itself (replaced when you update it)
+<skills-root>/agent-session-memory/  ← the skill itself (replaced when you update it)
 ├── SKILL.md
 ├── reference/
 │   └── graduation-examples.md
@@ -78,10 +78,10 @@ The skill is a folder containing `SKILL.md`. Where you put it depends on your pl
 ```bash
 git clone https://github.com/ks72/agent-session-memory.git
 mkdir -p .claude/skills
-cp -r agent-session-memory .claude/skills/session-log
+cp -r agent-session-memory .claude/skills/agent-session-memory
 ```
 
-Use `~/.claude/skills/session-log` instead if you want it available in every project, not just this one.
+Use `~/.claude/skills/agent-session-memory` instead if you want it available in every project, not just this one.
 
 ### Codex
 
@@ -92,7 +92,7 @@ Codex looks in a few places, depending on scope ([source](https://learn.chatgpt.
 
 ```bash
 mkdir -p .agents/skills
-cp -r agent-session-memory .agents/skills/session-log
+cp -r agent-session-memory .agents/skills/agent-session-memory
 ```
 
 ### Claude Cowork
